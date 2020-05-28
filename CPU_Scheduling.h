@@ -9,14 +9,14 @@
 #include <string>
 
 
-struct process {
-    char* name;
+struct Process {
+    char name[16];
     int id;
-    char activity;
+    int activity;
     int burst;
     int base;
     long limit;
-    char priority;
+    int priority;
 };
 
 class CPU_Scheduling {
@@ -25,6 +25,8 @@ public:
     CPU_Scheduling();
     std::vector<std::string> readFile(std::string fname);
     void writeToFile(std::string fname);
+    int getSize(std::string filename);
+
     int main(const char *fname);
 
 };

@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
     // Get the filename from cmd arguments
     const char *filename = argv[1];
 
-    CPU_Scheduling* scheduling = new CPU_Scheduling();
+    CPU_Scheduling * scheduling = new CPU_Scheduling();
     scheduling->main(filename);
     delete scheduling;
     return 0;
